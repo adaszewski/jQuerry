@@ -19,27 +19,30 @@ body {
 .accordion-item {
     border-bottom: 1px solid #dce7eb;
     padding: 15px 15px 15px 40px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .accordion-title {
     color: #2b3a40;
     text-decoration: none;
-    display: inline-block;  
+    display: inline-block;
     position: relative;
 }
 
 .accordion-title::before {
     content: "+";
     font-size: 20px;
+    color: black;
     position: absolute;
     left: -16px;
     top: -4px;
-    color: #1e3768;
 }
 
-.accordion-content {
-    display: none;
-}
+.open .accordion-title::before {
+    content: "-";
+    font-size: 40px;
+    color: red;
 
-
+    .accordion-content {
+        display: none;
+    }
