@@ -42,7 +42,8 @@ body {
     content: "-";
     font-size: 40px;
     color: red;
+}
 
-    .accordion-content {
-        display: none;
-    }
+.accordion-content {
+    display: none;
+}
